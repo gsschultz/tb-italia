@@ -8,8 +8,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-img {
-    background-size: cover;
+html, body {
+    height: 100%;
 }
 
 .topo-login,
@@ -45,11 +45,62 @@ img {
     margin: 0 10px;
 }
 
+.imagem-login,
+.imagem-cadastro {
+    width: 100%;
+    height: 100%;
+    min-height: 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.area-imagem {
+    width: 100%;
+    height: 800px;
+    background-image: url("/imagens/fundohome.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-italia {
+    font-size: 250px;
+    letter-spacing: 20px;
+    font-family: serif;
+    font-weight: 400;
+}
+
+.i-verde { color: green; }
+.i-branco { color: white; }
+.i-vermelho { color: red; }
+
+
+.i-verde { color: green; }
+.i-branco { color: white; }
+.i-vermelho { color: red; }
+
+
+.cultura-img {
+    width: 100%;
+    height: 350px;
+    background-image: url("/imagens/cultura.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .container-login {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -220px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .card-login {
@@ -59,8 +110,8 @@ img {
     border-radius: 25px;
     color: white;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
 
 .card-login h2 {
     margin-bottom: 20px;
@@ -111,17 +162,6 @@ img {
     font-size: 14px;
 }
 
-.titulo-italia {
-    font-size: 120px;
-    font-family: serif;
-    letter-spacing: 20px;
-    font-weight: 400;
-}
-
-.i-verde { color: green; }
-.i-branco { color: white; }
-.i-vermelho { color: red; }
-
 .faixa-bandeira {
     width: 100%;
     display: flex;
@@ -132,13 +172,49 @@ img {
 .faixa-bandeira .branco { background: white; width: 33.3%; }
 .faixa-bandeira .vermelho { background: red; width: 33.3%; }
 
-
-.titulo-italia {
-    width: 100%;
-    text-align: center;
-    font-size: 120px;
-    font-family: serif;
-    letter-spacing: 20px;
-    font-weight: 400;
-    margin-top: -230px;
+.cultura-bloco {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 22px;
 }
+
+.cultura-bloco h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.cultura-titulo2 {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cultura-colunas {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    gap: 40px;
+}
+
+.coluna {
+    width: 50%;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.coluna h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.coluna p {
+    margin-bottom: 25px;
+    line-height: 32px;
+}
+
